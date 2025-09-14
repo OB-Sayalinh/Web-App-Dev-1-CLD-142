@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+body
+{
+    margin: 0;
+    padding: 0px;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+@theme 
+{
+    --font-default: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main
+{
+    padding: 5px;
+    overflow: scroll;
+}
+
+@keyframes colorlerp
+{
+    from {color:aqua}
+    50% {color:crimson}
+    to {color:greenyellow}
+}
+
+@utility container
+{
+    margin-inline : auto;
+    padding-inline : 1.5rem;
+}
+
+.date
+{
+    text-align: right;
+}
+
+.accordion-content
+{
+    @apply overflow-hidden
+    w-full 
+    p-5 
+    font-medium
+    rtl:text-right 
+    text-gray-900
+    border 
+    border-b-0 
+    border-gray-200 
+    focus:ring-4 
+    dark:focus:ring-gray-800 
+    dark:border-gray-700 
+    dark:text-gray-200 
+    hover:bg-gray-100 
+    dark:hover:bg-gray-800 
+    duration-1000
+    transition-[max-height]
+}
+
+.accordion-btn
+{
+    @apply flex 
+    items-center 
+    justify-between 
+    w-full 
+    p-5 
+    font-medium
+    rtl:text-right 
+    text-gray-500 
+    border 
+    border-b-0 
+    border-gray-200 
+    focus:ring-4 
+    focus:ring-gray-200 
+    dark:focus:ring-gray-800 
+    dark:border-gray-700 
+    dark:text-gray-400 
+    hover:bg-gray-100 
+    dark:hover:bg-gray-800 
+    gap-3
+}
+
+
+
+.slide
+{
+
+}
+

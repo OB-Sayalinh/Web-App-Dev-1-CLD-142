@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-amber-50 dark:bg-gray-800 dark:text-amber-50">
+    <header>
+        <div class="container justify-between items-center flex py-6 min-h-1 rounded-b-2xl bg-sky-400 dark:bg-sky-900">
+            <button onclick="SetTheme()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded absolute max-w-20">Switch Theme</button>
+            <div class="container justify-center-safe items-center flex py-6">
+                <h2 class="text-3xl font-bold mr-2" style="color:black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">OB</h2>
+                <h2 class="text-3xl font-bold font-default" style="color:gray;">Sayalinh</h2>
+            </div>
+        </div>
+    </header>
+    <div class="container min-h-screen">
+        <button id="accordionBtn1" type="button" class="accordion-btn">
+            <span class="font-semibold underline">About Me</span>
+        </button>
+        <div id="accordionContent1" class="accordion-content max-h-0 hidden">
+            <p>Hardworking and determined to do things right.</p>
+        </div>
+        <button id="accordionBtn2" type="button" class="accordion-btn">
+            <span class="font-semibold underline">Skills</span>
+        </button>
+        <div id="accordionContent2" class="accordion-content hidden">
+            <ul>
+                <li>Project Management</li>
+                <li>Teamwork</li>
+                <li>Time Management</li>
+                <li>Effective Communication</li>
+                <li>Critical Thinking</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+        <button id="accordionBtn3" type="button" class="accordion-btn">
+            <span class="font-semibold underline">Education/Certificates</span>
+        </button>
+        <div id="accordionContent3" class="accordion-content hidden">
+            <ul class="grid grid-cols-1 place-content-stretch gap-1">
+                <li>AWS Certified Cloud Practioner <br>
+                - Earned Certificate Certificate Score</li>
+                <li>ACT Work Keys <br>
+                - Platinum Certificate Score</li>
+            </ul>
+        </div>
+        <button id="accordionBtn3" type="button" class="accordion-btn">
+            <span class="font-semibold underline">References</span>
+        </button>
+        <div id="accordionContent3" class="accordion-content hidden">
+            <p>Shannon Riley<br>
+                    WSU Tech Instructor</p>
+                <ul>
+                    <li style="font-size: small;">
+                        <p>Phone: <a href="tel:+13165127222" class="hover:underline">316-512-7222</a></p>
+                    </li>
+                    <li style="font-size: small;">
+                        <p>Email: <a href="mailto:sriley@wsutech.edu" class="hover:underline">sriley@wsutech.edu</a></p>
+                    </li>
+                </ul>
+        </div>
+        <div id="Projects" class="flex gap-1">
+            <p class="font-semibold underline">Project Portfolio: <p class="font-normal no-underline"><a href="https://github.com/OB-Sayalinh">GitHub</a><p></p>
+        </div>
+    </div>
+    <footer class="container flex justify-between items-center bg-blue-200 dark:bg-blue-800 fixed bottom-0 h-32 inset-x-0 rounded-t-2xl   ">
+        <div>
+            <h4 class="underline">Contact</h4>
+            <p>Phone: <a href="tel:+13162078883" class="hover:underline">316-207-8883</a> <br>
+                Email: <a href="mailto:obsayalinh4@gmail.com" class="hover:underline">obsayalinh4@gmail.com</a> <br>
+                Address: 2855 N Anna Ct
+            </p>
+            
+        </div>
+        <p id="timer" class="date">1:00:00</p>
+    </footer>
+
+    <script src="Midterm.js"></script>
+
+</body>
+
+</html>
